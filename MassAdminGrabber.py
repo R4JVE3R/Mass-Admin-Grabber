@@ -1,5 +1,6 @@
 import urllib3
 import time
+import os
 from colorama import Fore
 
 possibleAdmin = ['admin','Admin','administrator','adminpanel','webadmin','wp-admin','admin.php','login.php','Login.php']
@@ -23,7 +24,9 @@ http = urllib3.PoolManager()
 siteList = open("list.txt","r")
 result = open('Result.txt','w')
 error = open('error.txt','w')
-
+if(os.stat("list.txt").st_size == 0):
+    print(Fore.RED+"List.txt File is Empty Please Enter Your Targets Inside It.")
+    exit()
 total = siteList.readlines()
 
 for site in total:
