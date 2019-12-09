@@ -8,6 +8,7 @@ To use this tool you have to provide list of websites and it will find admin pan
 ## Requirements:
 - Python3
 - urllib3
+- colorama
 
 ## Usage:
 There is File list.txt, So you have to provide your list of websites in this file.
