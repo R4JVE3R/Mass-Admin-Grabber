@@ -24,7 +24,7 @@ http = urllib3.PoolManager()
 siteList = open("list.txt","r")
 result = open('Result.txt','w')
 error = open('error.txt','w')
-if(os.stat("list.txt").st_size == 0):
+if(os.stat("list.txt").st_size == 0 or os.stat("list.txt").st_size == 1):
     print(Fore.RED+"List.txt File is Empty Please Enter Your Targets Inside It.")
     exit()
 total = siteList.readlines()
