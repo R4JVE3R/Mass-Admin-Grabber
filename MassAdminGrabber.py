@@ -27,7 +27,7 @@ if(os.stat("list.txt").st_size == 0 or os.stat("list.txt").st_size == 1):
 http = urllib3.PoolManager()
 possibleAdmin = [
     'admin','Admin','login','Login','administrator','Administrator','adminpanel','webadmin','wp-admin','admin.php','login.php','Login.php','admincontrol','pages/admin','siteadmin',
-    'webmaster','UserLogin','myadmin','members','user','adminLogin.php']
+    'webmaster','UserLogin','myadmin','member','members','user','adminLogin.php']
 foundAdminList = []
 foundAdminList1 = []
 
